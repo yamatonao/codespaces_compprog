@@ -1,0 +1,12 @@
+class Solution:
+    def gcdOfStrings(self, str1: str, str2: str) -> str:
+
+# 高々1000なので、高速化は考えなくてよい
+#1: str1 と str2で公約数を列挙する。
+#2: 公約数の文字長で、割り切れるか確認する。
+#3: 最大長が答え。（二分探索はしなくてよい）
+
+        length1 = len(str1)
+        length2 = len(str2)
+
+        # gcd
